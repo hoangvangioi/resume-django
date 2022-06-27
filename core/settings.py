@@ -204,7 +204,6 @@ django_on_heroku.settings(locals())
 CLOUDINARY_URL = config('CLOUDINARY_URL')
 
 # DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage' and 'cloudinary_storage.storage.RawMediaCloudinaryStorage' and 'cloudinary_storage.storage.VideoMediaCloudinaryStorage'
-# FileSystemStorage
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.FileSystemStorage'
 
 
