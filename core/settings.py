@@ -51,6 +51,10 @@ INSTALLED_APPS = [
     # lang
     'rosetta',  # NEW
     'parler',  # NEW
+
+    # Cloud
+    'cloudinary_storage',
+    'cloudinary',
 ]
 
 # only if django version >= 3.0
@@ -198,3 +202,5 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 django_heroku.settings(locals())
 
 CLOUDINARY_URL = config('CLOUDINARY_URL')
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
