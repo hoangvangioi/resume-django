@@ -1,0 +1,61 @@
+{% load i18n %}
+<!-- About Me Subpage -->
+<section data-id="about-me" class="animated-section">
+    <div class="page-title">
+        <h2>{% trans 'About <span>Me</span>' %}</h2>
+    </div>
+
+    <div class="section-content">
+        <!-- Personal Information -->
+        <div class="row">
+
+            {% for i in about %}
+            <div class="col-xs-12 col-sm-7">
+                <p>{{i.about}}</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-5">
+                <div class="info-list">
+                    <ul>
+                        <li>
+                            <span class="title">{% trans 'Date of birth' %}</span>
+                            <span class="value">{{i.date_of_birth|date:"d/m/Y"}}</span>
+                        </li>
+                        <li>
+                            <span class="title">{% trans 'Gender' %}</span>
+                            <span class="value">{{i.gender}}</span>
+                        </li>
+                        <li>
+                            <span class="title">{% trans 'Residence' %}</span>
+                            <span class="value">{{i.residence}}</span>
+                        </li>
+  
+                        <li>
+                            <span class="title">{% trans 'Address' %}</span>
+                            <span class="value">{{i.address}}</span>
+                        </li>
+  
+                        <li>
+                            {% for a in accounts %}
+                            <span class="title">{% trans 'E-mail' %}</span>
+                            <span class="value"><a href="mailto:{{i.email}}">{{a.email}}</a></span>
+                            {% endfor %}
+                        </li>
+  
+                        <li>
+                            <span class="title">{% trans 'Phone' %}</span>
+                            <span class="value"><a href="tel:{{i.phone}}">{{i.phone}}</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+        <!-- End of Personal Information -->
+
+        <div class="white-space-30"></div>
+  
+    </div>
+</section>
+<!-- End of About Me Subpage -->

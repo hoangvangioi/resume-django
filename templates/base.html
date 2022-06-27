@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'includes/head.html' %}
+</head>
+<body>
+    <!-- Animated Background -->
+	<div class="lm-animated-bg" style="background-image: url(https://lmpixels.com/demo/breezycv/dark/3/img/main_bg.png);"></div>
+	<!-- /Animated Background -->
+
+	<!-- Loading animation -->
+	{% comment %} <div class="preloader">
+		<div class="preloader-animation">
+			<div class="preloader-spinner"></div>
+		</div>
+	</div> {% endcomment %}
+	<!-- /Loading animation -->
+
+	{% block content %}
+	  
+	{% endblock content %}
+
+    {% include 'includes/script.html' %}
+</body>
+</html>

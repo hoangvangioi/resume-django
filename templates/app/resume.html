@@ -1,0 +1,138 @@
+<!-- Resume Subpage -->
+<section data-id="resume" class="animated-section">
+    <div class="page-title">
+        <h2>Resume</h2>
+    </div>
+  
+    <div class="section-content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="block-title">
+                    <h3>Education</h3>
+                </div>
+  
+                <div class="timeline timeline-second-style clearfix">
+                    {% for education in educations %}
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                            <h5 class="item-period">{{education.end|date:"Y"}} - {{education.start|date:"Y"}}</h5>
+                            <span class="item-company">{{education.school}}</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                            <h4 class="item-title">{{education.position}}</h4>
+                            <p>{{education.description}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+  
+                <div class="white-space-50"></div>
+  
+                <div class="block-title">
+                    <h3>Experience</h3>
+                </div>
+  
+                <div class="timeline timeline-second-style clearfix">
+                    {% for experience in experiences %}
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                            <h5 class="item-period">{{experience.end|date:"Y"}} - {{experience.start|date:"Y"}}</h5>
+                            <span class="item-company">{{experience.workplace}}</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                            <h4 class="item-title">{{experience.position}}</h4>
+                            <p>{{experience.description}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Skills & Certificates -->
+            <div class="col-xs-12 col-sm-12">
+                <div class="white-space-50"></div>
+
+                <!-- Skills -->
+                <div class="block-title">
+                  <h3><span>Skills</span></h3>
+                </div>
+                <div class="grid">
+                    {% for skill in skills %}
+                    <div><h4>{{skill.skill}}</h4><img src="{{skill.logo.url}}" alt="{{skill.skill}}" title="{{skill.skill}}"></div>
+                    {% endfor %}
+                </div>
+                <!-- End of Skills -->
+              </div>
+            <!-- End of Skills & Certificates -->
+        </div>
+  
+        <div class="white-space-50"></div>
+  
+        <!-- Certificates -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <div class="block-title">
+                    <h3>Certificates</h3>
+                </div>
+            </div>
+        </div>
+  
+        <div class="row">
+            <!-- Certificate 1 -->
+            <div class="col-xs-12 col-sm-6">
+                <div class="certificate-item clearfix">
+                    <div class="certi-logo">
+                        <img src="https://lmpixels.com/demo/breezycv/dark/3/img/clients/client-1.png"
+                            alt="logo" />
+                    </div>
+  
+                    <div class="certi-content">
+                        <div class="certi-title">
+                            <h4>Psyhology of Intertnation Design</h4>
+                        </div>
+                        <div class="certi-id">
+                            <span>Membership ID: XXXX</span>
+                        </div>
+                        <div class="certi-date">
+                            <span>19 April 2018</span>
+                        </div>
+                        <div class="certi-company">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Certificate 1 -->
+  
+            <!-- Certificate 2 -->
+            <div class="col-xs-12 col-sm-6">
+                <div class="certificate-item clearfix">
+                    <div class="certi-logo">
+                        <img src="https://lmpixels.com/demo/breezycv/dark/3/img/clients/client-1.png"
+                            alt="logo" />
+                    </div>
+  
+                    <div class="certi-content">
+                        <div class="certi-title">
+                            <h4>Psyhology of Intertnation Design</h4>
+                        </div>
+                        <div class="certi-id">
+                            <span>Membership ID: XXXX</span>
+                        </div>
+                        <div class="certi-date">
+                            <span>19 April 2018</span>
+                        </div>
+                        <div class="certi-company">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Certificate 2 -->
+        </div>
+        <!-- End of Certificates -->
+    </div>
+</section>
+<!-- End of Resume Subpage -->

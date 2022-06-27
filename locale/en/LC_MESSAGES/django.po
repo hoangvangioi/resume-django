@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-27 00:19+0700\n"
+"PO-Revision-Date: 2022-06-25 21:16+0700\n"
+"Last-Translator: Hoàng Văn Giỏi <admin@admin.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: app/admin.py:27
+msgid "Personal info"
+msgstr ""
+
+#: app/admin.py:28
+msgid "Important dates"
+msgstr ""
+
+#: app/apps.py:8
+msgid "App manage"
+msgstr "App manage"
+
+#: app/forms.py:13 app/models.py:55
+msgid "Full Name"
+msgstr "Full Name"
+
+#: app/forms.py:26
+msgid "Email Address"
+msgstr ""
+
+#: app/forms.py:34 app/models.py:57
+msgid "Subject"
+msgstr "Subject"
+
+#: app/forms.py:43 app/models.py:58
+msgid "Message"
+msgstr "Message"
+
+#: app/models.py:14
+msgid "Male"
+msgstr "Male"
+
+#: app/models.py:15
+msgid "Female"
+msgstr "Female"
+
+#: app/models.py:16
+msgid "Other"
+msgstr "Other"
+
+#: app/models.py:56
+msgid "Email"
+msgstr "Email"
+
+#: app/models.py:59
+msgid "Date created"
+msgstr "Date created"
+
+#: app/models.py:67
+#, fuzzy
+#| msgid "Contact"
+msgid "contact"
+msgstr "Contact"
+
+#: app/models.py:68
+#, fuzzy
+#| msgid "Contact"
+msgid "contacts"
+msgstr "Contact"
+
+#: app/models.py:72
+msgid "First name"
+msgstr ""
+
+#: app/models.py:73
+msgid "Last name"
+msgstr ""
+
+#: app/models.py:83
+msgid "account"
+msgstr ""
+
+#: app/models.py:84
+msgid "accounts"
+msgstr ""
+
+#: app/models.py:99
+msgid "Website URL"
+msgstr ""
+
+#: app/models.py:100
+msgid "Facebook URL"
+msgstr ""
+
+#: app/models.py:101
+msgid "Instagram URL"
+msgstr ""
+
+#: app/models.py:102
+msgid "Github URL"
+msgstr ""
+
+#: app/models.py:108
+msgid "social link"
+msgstr ""
+
+#: app/models.py:109
+msgid "social links"
+msgstr ""
+
+#: app/models.py:121
+msgid "Avatar"
+msgstr ""
+
+#: app/models.py:122
+msgid "Job"
+msgstr ""
+
+#: app/models.py:123
+msgid "Curriculum Vitae"
+msgstr ""
+
+#: app/models.py:136 app/models.py:137
+msgid "about"
+msgstr ""
+
+#: app/models.py:157
+msgid "education"
+msgstr ""
+
+#: app/models.py:158
+msgid "educations"
+msgstr ""
+
+#: app/models.py:171
+msgid "experience"
+msgstr ""
+
+#: app/models.py:172
+msgid "experiences"
+msgstr ""
+
+#: app/models.py:197
+msgid "certificate"
+msgstr ""
+
+#: app/models.py:198
+msgid "certificates"
+msgstr ""
+
+#: app/models.py:219
+msgid "portfolio"
+msgstr ""
+
+#: app/models.py:220
+msgid "portfolios"
+msgstr ""
+
+#: app/models.py:239
+msgid "post"
+msgstr ""
+
+#: app/models.py:240
+msgid "blog"
+msgstr ""
+
+#: core/settings.py:135
+msgid "Vietnamese"
+msgstr ""
+
+#: core/settings.py:136
+msgid "English"
+msgstr ""
+
+#: core/urls.py:25
+msgid "admin/"
+msgstr ""
+
+#: core/urls.py:45
+msgid "My Index Title"
+msgstr ""
+
+#: core/urls.py:46
+msgid "My Site Administration"
+msgstr ""
+
+#: core/urls.py:47
+msgid "My Site Management"
+msgstr ""
+
+#: templates/app/about.html:5
+msgid "About <span>Me</span>"
+msgstr "About <span>Me</span>"
+
+#: templates/app/about.html:21
+msgid "Date of birth"
+msgstr ""
+
+#: templates/app/about.html:25
+msgid "Gender"
+msgstr ""
+
+#: templates/app/about.html:29
+msgid "Residence"
+msgstr ""
+
+#: templates/app/about.html:34
+msgid "Address"
+msgstr ""
+
+#: templates/app/about.html:40
+#, fuzzy
+#| msgid "Email"
+msgid "E-mail"
+msgstr "Email"
+
+#: templates/app/about.html:46
+msgid "Phone"
+msgstr ""
+
+#: templates/app/contact.html:5
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact"
+msgstr "Contact"
+
+#: templates/app/contact.html:49
+#, fuzzy
+#| msgid "About <span>Me</span>"
+msgid "How Can I <span>Help You?</span>"
+msgstr "About <span>Me</span>"
+
+#: templates/app/contact.html:77
+#, fuzzy
+#| msgid "Message"
+msgid "Send message"
+msgstr "Message"
+
+#: templates/app/send_email.html:2
+#, python-format
+msgid ""
+"Hey, You're receiving this email because you requested a password reset for "
+"your user account at %(name)s."
+msgstr ""
+
+#: templates/app/send_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: templates/app/send_email.html:6
+msgid "Your username, in case you've forgotten:"
+msgstr ""
+
+#: templates/app/send_email.html:8
+msgid "Thanks for using our site!"
+msgstr ""
+
+#: templates/app/send_email.html:10
+#, python-format
+msgid "The %(name)s team"
+msgstr ""
+
+#: templates/includes/sidebar.html:70
+msgid "Download CV"
+msgstr "Download CV"
+
+#: templates/includes/sidebar.html:74
+msgid "© 2022 All rights reserved."
+msgstr "© 2022 All rights reserved."
+
+#~ msgid "Language"
+#~ msgstr "Language"

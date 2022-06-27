@@ -1,0 +1,22 @@
+<!-- Home Subpage -->
+<section data-id="home" class="animated-section start-page">
+    <div class="section-content vcentered">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="title-block">
+            {% for a in accounts %}
+            <h2>{{a.get_full_name}}</h2>
+            <div class="owl-carousel text-rotation">
+            <div class="item">
+                {% for i in about %}      
+                <div class="sp-subtitle">{{i.job}}</div>
+                {% endfor %}
+            </div>
+            </div>
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- End of Home Subpage -->

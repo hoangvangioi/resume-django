@@ -1,0 +1,37 @@
+<!-- Blog Subpage -->
+<section data-id="blog" class="animated-section">
+    <div class="page-title">
+        <h2>Blog</h2>
+    </div>
+
+    <div class="section-content">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <div class="blog-masonry two-columns clearfix">
+                    {% for post in posts %}                      
+                    <div class="item post-1">
+                        <div class="blog-card">
+                            <div class="media-block">
+                                <div class="category">
+                                    <a href="#" title="View all posts in {{post.tag}}">{{post.tag}}</a>
+                                </div>
+                                <a href="">
+                                    <img src="{{post.image.url}}" alt="{{post.post}}" title="{{post.post}}" />
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <div class="post-info">
+                                <div class="post-date">{{post.update_at}}</div>
+                                <a href="">
+                                    <h4 class="blog-item-title">{{post.post}}</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Blog Subpage -->
