@@ -15,11 +15,10 @@ class WEBPFieldFile(ImageFieldFile):
         content.file.seek(0)
         image = Image.open(content.file)
         image_bytes = io.BytesIO()
-        # image.save(fp=image_bytes, format="WEBP")
+        image.save(fp=image_bytes, format="WEBP")
         image_content_file = ContentFile(content=image_bytes.getvalue())
 
-        # super().save('{}.webp'.format(uuid.uuid4().hex), image_content_file, save)
-        super().save(name, image_content_file, save)
+        super().save('{}.webp'.format(uuid.uuid4().hex), image_content_file, save)
 
 
 class WEBPField(models.ImageField):
