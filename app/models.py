@@ -111,6 +111,8 @@ class SocialLinks(models.Model):
 
 class About(TranslatableModel):
     account = models.OneToOneField(Accounts, on_delete=models.CASCADE)
+    avatar        = WEBPField(verbose_name=_('Avatar'), upload_to='avatars/')
+    cv            = models.FileField(verbose_name=_('Curriculum Vitae'), upload_to='cv/')
     translations = TranslatedFields(
         phone         = models.CharField(max_length=12),
         about         = models.TextField(),
@@ -118,9 +120,7 @@ class About(TranslatableModel):
         address       = models.CharField(max_length=255, null=True, blank=True),
         date_of_birth = models.DateField(null=True, blank=True),
         gender        = models.CharField(max_length=15, choices=GENDER_CHOICES, null=True, blank=True),
-        avatar        = WEBPField(verbose_name=_('Avatar'), upload_to='avatars/'),
         job           = models.CharField(verbose_name=_('Job'), max_length=255, blank=True, null=True),
-        cv            = models.FileField(verbose_name=_('Curriculum Vitae'), upload_to='cv/'),
     )
 
     def save(self, *args, **kwargs):

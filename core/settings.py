@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from decouple import config
-import django_heroku
+import django_on_heroku
 import dj_database_url
 from django.utils.translation import gettext_lazy as _
 from decouple import Csv
@@ -199,7 +199,7 @@ RECIPIENT_ADDRESS = config('RECIPIENT_ADDRESS')
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Configure Django App for Heroku.
-django_heroku.settings(locals())
+django_on_heroku.settings(locals())
 
 CLOUDINARY_URL = config('CLOUDINARY_URL')
 
